@@ -13,7 +13,8 @@ void copy_file(const char *src,const char *dst,mode_t mode)
            {
              fprintf(stderr,"open file error\n");
              return;
-         }
+
+           }
            chmod(dst,sbuf_src.st_mode);
            
            char buf[10] = {};
