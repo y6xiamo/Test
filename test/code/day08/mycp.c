@@ -15,7 +15,8 @@ void copy_file(const char *src,const char *dst,mode_t mode)
              return;
          }
            chmod(dst,sbuf_src.st_mode);
-           
+
+           //缓冲区
            char buf[10] = {};
            int r;
            while((r = fread(buf,1,sizeof(buf),fp_src)))
