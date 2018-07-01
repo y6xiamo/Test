@@ -6,25 +6,28 @@
    TreeNode *right;
    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
   };
- 
+//判断两个数是否相等 
 class Solution {
 public:
     bool isSameTree(TreeNode *p, TreeNode *q) {
         if(p == NULL && q == NULL)
         {
-            return true;
+            return true;//都为空，相等
         }
         if((p == NULL && q != NULL)||(p != NULL && q == NULL)||(p->val != q->val))
         {
             return false;
+            //一个为空另一个不为空或者两个结点值不同就不相等
         }
+        //递归的遍历
         return (isSameTree(p->left,q->left) && isSameTree(p->right,q->right));
-            
+        
     }
 
 };
 
 int main()
 {
+    
     return 0;
 }
