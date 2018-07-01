@@ -6,7 +6,8 @@
    TreeNode *right;
    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  };
-
+//判断是否是二叉搜索树
+//二叉搜索树的规则：左子树小于根结点小于右子树
 class Solution {
 public:
     bool isValidBST(TreeNode *root) {
