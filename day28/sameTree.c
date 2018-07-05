@@ -1,12 +1,13 @@
 #include<iostream>
 //Definition for binary tree
+//二叉树的结构
   struct TreeNode {
    int val;
    TreeNode *left;
    TreeNode *right;
    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
   };
-//判断两个数是否相等 
+//判断两个树是否相等 
 class Solution {
 public:
     bool isSameTree(TreeNode *p, TreeNode *q) {
