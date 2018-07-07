@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define row 3
 #define col 3
+//在杨氏矩阵里查找一个元素是否存在
 int find(int arr[row][col],int size,int to_find)
 {
     if(arr == NULL)
@@ -30,6 +31,7 @@ int find(int arr[row][col],int size,int to_find)
     }
     return 0;
 }
+
 int main()
 {
     int arr[row][col] = {{1,2,3},
