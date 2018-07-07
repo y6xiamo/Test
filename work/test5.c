@@ -36,6 +36,8 @@ int find(int arr[row][col],int size,int to_find)
         }
         else
         {
+            //走到这，说明当前元素就是要查找的元素，直接返回
+            
             return 1;
         }
     }
