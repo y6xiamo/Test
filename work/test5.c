@@ -7,10 +7,12 @@ int find(int arr[row][col],int size,int to_find)
     if(arr == NULL)
     {
         return 0;
+        //非法输入
     }
     if(size <= 0)
     {
         return 0;
+        //数组为空，输入错误
     }
     int i = 0;
     int j = col - 1;
