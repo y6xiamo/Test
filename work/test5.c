@@ -25,10 +25,13 @@ int find(int arr[row][col],int size,int to_find)
         if(to_find < arr[i][j])
         {
             //要查找的元素小于当前数组元素
+            //说明在当前元素左边，列减减
             j--;
         }
         else if(to_find > arr[i][j])
         {
+            //要查找元素大于当前数组元素
+            //说明在当前元素下面，行加加
             i++;
         }
         else
