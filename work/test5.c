@@ -14,12 +14,17 @@ int find(int arr[row][col],int size,int to_find)
         return 0;
         //数组为空，输入错误
     }
+    //杨氏矩阵规则：
+    //每一行从左往右递增
+    //每一列从上往下递增
     int i = 0;
     int j = col - 1;
+    //从第0行的最后一列开始比较
     while(i <= row && j >= 0)
     {
         if(to_find < arr[i][j])
         {
+            //要查找的元素小于当前数组元素
             j--;
         }
         else if(to_find > arr[i][j])
