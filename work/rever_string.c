@@ -39,6 +39,7 @@ void reverse_string(char arr[],int size)
         }
         else
         {
+            //不等于空格，继续向后查找
             right++;
         }
         i++;
