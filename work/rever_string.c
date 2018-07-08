@@ -5,6 +5,7 @@ void reverse_word(char arr[],int left,int right)
     char tmp;
     while(left < right)
     {
+        //从前往后两两交换
         tmp = arr[left];
         arr[left] = arr[right];
         arr[right] = tmp;
@@ -18,6 +19,7 @@ void reverse_string(char arr[],int size)
     if(arr == NULL)
     {
         return;
+        //非法输入
     }
     int i = 0;
     int left = 0;
