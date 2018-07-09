@@ -13,6 +13,7 @@ public:
         return res;
     }
     //k表示要分割的段数，如果k==0,表示分割完成
+    //借助递归，k!=0,继续分割
     restore(string s,int k,string out,vector<string>& ret){
         if (k == 0) {
            if (s.empty()) res.push_back(out);
