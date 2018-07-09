@@ -17,12 +17,23 @@ public:
 
         }
 
+    //对每一段进行合法性检验
     bool isVaild(string s){
-        if(s.empty()||s.size()>3||(s.size()>1 && s.c_str[0] == 0))
+        if(s.empty()||s.size()>3||(s.size()>1 && s[0] == 0))
+        {
+            //1.输入字符串不能为空
+            //2.每一段至少有一位，总长至少大于3
+            //3.第一位不能为0
+            //如果上面有一条不满足，则不合法
+            return false;
+        }
+        //将字符串转换成整数，看其是否满足>=0并且<=255
+        int ret = atoi(s.c_str());
+        if(ret > 255 || ret < 0)
         {
             return false;
         }
-
+        return true;
     }
                 
             
