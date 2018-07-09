@@ -12,10 +12,18 @@ public:
         restore(s,4,res);
         return res;
     }
-        restore(string s,int k,vector<string>& ret){
+    //k表示要分割的段数，如果k==0,表示分割完成
+    restore(string s,int k,vector<string>& ret){
 
         }
 
+    bool isVaild(string s){
+        if(s.empty()||s.size()>3||(s.size()>1 && s.c_str[0] == 0))
+        {
+            return false;
+        }
+
+    }
                 
             
     }
