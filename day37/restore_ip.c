@@ -9,11 +9,32 @@ public:
     vector<string> restoreIpAddresses(string s) {
         vector<string> res;//保存还原的ip地址
         
-        restore(s,4,res);
+        restore(s,4,"",res);
         return res;
     }
     //k表示要分割的段数，如果k==0,表示分割完成
-    restore(string s,int k,vector<string>& ret){
+    restore(string s,int k,string out,vector<string>& ret){
+        if (k == 0) {
+           if (s.empty()) res.push_back(out);
+                                
+        }
+        else {
+            for (int i = 1; i <= 3; ++i)
+            {
+                if (s.size() >= i && isValid(s.substr(0, i))) {
+                     if (k == 1) 
+                     {
+                          restore(s.substr(i), k - 1, out + s.substr(0, i), res);
+                      }
+                     else
+                     {
+                         restore(s.substr(i), k - 1, out + s.substr(0, i) + ".", res);
+                     }
+                            
+            }
+                    
+        }
+            
 
         }
 
