@@ -14,33 +14,37 @@ public:
     }
     //k表示要分割的段数，如果k==0,表示分割完成
     //借助递归，k!=0,继续分割
-    restore(string s,int k,string out,vector<string>& ret){
-        if (k == 0) {
-           if (s.empty()) res.push_back(out);
-                                
+    void restore(string s,int k,string out,vector<string>& res){
+        if (k == 0)
+        {
+           if (s.empty())
+           {
+               res.push_back(out);
+           }
         }
-        else {
+        else
+        {
             for (int i = 1; i <= 3; ++i)
             {
-                if (s.size() >= i && isValid(s.substr(0, i))) {
+                if (s.size() >= i && isValid(s.substr(0, i)))
+                {
                      if (k == 1) 
                      {
+                         //
                           restore(s.substr(i), k - 1, out + s.substr(0, i), res);
                       }
                      else
                      {
+                         //剩下不只一段需要分割，用.隔开
                          restore(s.substr(i), k - 1, out + s.substr(0, i) + ".", res);
                      }
-                            
+                }
             }
-                    
         }
-            
-
-        }
+ }
 
     //对每一段进行合法性检验
-    bool isVaild(string s){
+    bool isValid(string s){
         if(s.empty()||s.size()>3||(s.size()>1 && s[0] == 0))
         {
             //1.输入字符串不能为空
@@ -50,17 +54,14 @@ public:
             return false;
         }
         //将字符串转换成整数，看其是否满足>=0并且<=255
-        int ret = atoi(s.c_str());
-        if(ret > 255 || ret < 0)
+        int res = atoi(s.c_str());
+        if(res > 255 || res < 0)
         {
             return false;
         }
         return true;
     }
-                
             
-    }
-
 };
 int main()
 {
