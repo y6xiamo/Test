@@ -33,7 +33,7 @@ public:
                 {
                      if (k == 1) 
                      {
-                         //
+                         //还需要继续分割，继续递归调用restore
                           restore(s.substr(i), k - 1, out + s.substr(0, i), res);
                       }
                      else
