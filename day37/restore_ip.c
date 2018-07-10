@@ -28,6 +28,7 @@ public:
             for (int i = 1; i <= 3; ++i)
             {
                 //调用substr函数在原串中取出指定长度的子串
+                //调用isValid()然后判断该字串是否合法
                 if (s.size() >= i && isValid(s.substr(0, i)))
                 {
                      if (k == 1) 
