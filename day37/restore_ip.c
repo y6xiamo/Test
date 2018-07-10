@@ -24,8 +24,10 @@ public:
         }
         else
         {
+            //每一段有三位数字
             for (int i = 1; i <= 3; ++i)
             {
+                //调用substr函数在原串中取出指定长度的子串
                 if (s.size() >= i && isValid(s.substr(0, i)))
                 {
                      if (k == 1) 
