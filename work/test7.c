@@ -10,6 +10,7 @@ void Odd_Even_Swop(int* arr,int size,int* new_arr)
     int i = 0;
     while(i<size)
     {
+        //如果是奇数，直接赋值
         if(arr[i] % 2 != 0)
         {
             new_arr[i] = arr[i];
@@ -17,6 +18,7 @@ void Odd_Even_Swop(int* arr,int size,int* new_arr)
         i++;
     }
     //有点问题
+    //让k走到新数组元素的最后
    int k = 0;
    for( ;k < size;k++)
    {
@@ -25,6 +27,7 @@ void Odd_Even_Swop(int* arr,int size,int* new_arr)
            break;
        }
    }
+
    i = 0;
    while(i<size)
    {
