@@ -28,6 +28,7 @@ void Odd_Even_Swop(int* arr,int size,int* new_arr)
        }
    }
 
+   //将偶数赋给新数组，接着奇数的位置
    i = 0;
    while(i<size)
    {
