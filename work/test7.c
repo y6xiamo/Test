@@ -46,6 +46,7 @@ int main()
     //重新开辟一块空间,存储交换后的元素，原来的数组结构不变
     Odd_Even_Swop(arr,size,new_arr);
 
+    //打印元素
     int i = 0;
     for( ;i < size;i++)
     {
