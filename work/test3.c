@@ -1,15 +1,17 @@
 #include <stdio.h>
+//查找第一个单独出现的字符
 char find_first_alone_num(char str[],int size)
 {
     if(str == NULL)
     {
         return 0;
+        //非法输入
     }
     //printf("%d\n",size);
     int i = 0;
-    int cur = 0;
+    int cur = 0;//用来表示当前的元素
     int flag = 0;
-    for( ;i < size;i++)
+    for( ;i <= size;i++)
     {
         int j = 1;
         cur = str[i];
