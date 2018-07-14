@@ -11,14 +11,16 @@ int find_num_more_than_half(int *arr,int size)
     int count = 0;//用来记录次数
     for( ;i< size;i++)
     {
-        //每次用当前元素和他的下一个元素比较
+        //每次用当前元素和他的后序元素逐个比较
         int j = i + 1;
         while(j < size)
         {
+            //如果相等，次数++
             if(arr[i] == arr[j])
             {
                 count++;
             }
+            //相等或不相等都要再往后面走,逐个遍历
                 j++;
         }
     
