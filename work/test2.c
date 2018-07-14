@@ -5,9 +5,10 @@ int find_num_more_than_half(int *arr,int size)
     if(arr == NULL)
     {
         return 0;
+        //非法输入
     }
     int i = 0;
-    int count = 0;
+    int count = 0;//用来记录次数
     for( ;i< size;i++)
     {
         if(arr[i] == arr[i+1])
