@@ -1,4 +1,5 @@
 #include <stdio.h>
+//查找出现次数超过一半的数字
 int find_num_more_than_half(int *arr,int size)
 {
     if(arr == NULL)
