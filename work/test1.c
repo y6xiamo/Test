@@ -7,12 +7,12 @@ int to_int(char* str,int size)
         return 0;
         //非法输入
     }
-    char* start = str;
-    
+    char* start = str;//用于定位这个字符串的开头   
     int num = 0;
     
     if(*str == '+'||*str == '-')
     {
+        //碰到正负号跳过
         str++;
     }
     while(*str)
