@@ -1,9 +1,11 @@
 #include <stdio.h>
+//将一个字符串转换为一个数字
 int to_int(char* str,int size)
 {
     if(str == NULL)
     {
         return 0;
+        //非法输入
     }
     char* start = str;
     
