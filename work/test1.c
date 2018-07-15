@@ -19,7 +19,7 @@ int to_int(char* str,int size)
     {
         if(*str <= '0' || *str >= '9')
         {
-            return 0;
+            //输入字符串不合法,每一个字符必须为数字            return 0;
         }
         num = num * 10 + (*str -'0');
         str++;
