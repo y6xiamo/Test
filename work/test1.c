@@ -20,13 +20,17 @@ int to_int(char* str,int size)
         if(*str <= '0' || *str >= '9')
         {
             //输入字符串不合法,每一个字符必须为数字            return 0;
+            return 0;
         }
         num = num * 10 + (*str -'0');
+        //将每一个字符转换为数字
+        
         str++;
     }
     if(*start == '-')
     {
         num = -num;
+        //如果第一个字符为符号，那么这个数字输出为负的
     }
     return num;
 }
