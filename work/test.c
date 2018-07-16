@@ -6,6 +6,11 @@ void reverse_string(char* str,int size,int offset)
     {
         return;//非法输入
     }
+    if(size == 0)
+    {
+        return;
+    }
+    if(offset < 0 || offset > size)
 
 }
 int main()
