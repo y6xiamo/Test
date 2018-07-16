@@ -1,5 +1,5 @@
 #include <stdio.h>
-//反转字符串
+//反转n个字符串
 void reverse_string(char* str,int size,int offset)
 {
     if(str == NULL)
@@ -17,7 +17,12 @@ void reverse_string(char* str,int size,int offset)
     //定义两个指针，
     //一个指向字符串的头，一个指向字符串的结尾
     char* start = str;
-    char* end = str + size;
+    char* end = str + offset;
+    int i = 0;
+    for( ;i < size ; ++i)
+    {
+
+    }
 
 
 }
