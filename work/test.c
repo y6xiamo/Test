@@ -16,7 +16,9 @@ void reverse_string(char* str,int size,int offset)
     }
     //定义两个指针，
     //一个指向字符串的头，一个指向字符串的结尾
-    
+    char* start = str;
+    char* end = str + size;
+
 
 }
 int main()
