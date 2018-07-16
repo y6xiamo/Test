@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//反转字符串
 void reverse_string(char* str,int size,int offset)
 {
     if(str == NULL)
