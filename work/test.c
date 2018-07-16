@@ -18,9 +18,10 @@ void reverse_string(char* str,int size,int offset)
     //一个指向字符串的头，一个指向字符串的结尾
     char* start = str;
     char* end = str + offset;
-    int i = 0;
+    int i =
     for( ;i < size ; ++i)
     {
+        swap(*)
 
     }
 
