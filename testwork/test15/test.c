@@ -4,6 +4,9 @@
 int main()
 {  
     char arr[10] = "accba";
+    //定义两个指针，
+    //一个从头开始遍历
+    //一个从尾部开始遍历
     char *left;
     left = arr;
 
@@ -12,11 +15,13 @@ int main()
     
     
 
+    //
     while((left < right)&&(*left == *right))
     {
         left++;
         right--;
     }
+    //
     if(*left == *right)
         printf(" 是回文字符串\n");
     else
