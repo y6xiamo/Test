@@ -21,7 +21,9 @@ int main()
         left++;
         right--;
     }
-    //
+    //如果前后字符对应相等
+    //就是回文字符串
+    //否则，不是
     if(*left == *right)
         printf(" 是回文字符串\n");
     else
