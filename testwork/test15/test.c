@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+//判断一个字符串是否是回文字符串
 int main()
 {  
     char arr[10] = "accba";
@@ -17,9 +18,9 @@ int main()
         right--;
     }
     if(*left == *right)
-        printf(" shi hui wen zi fu chuan\n");
+        printf(" 是回文字符串\n");
     else
-        printf(" bu shi hui wen zi fu chuan\n");
+        printf(" 不是回文字符串\n");
      
     return 0;
 }
