@@ -5,17 +5,25 @@ public:
         int i = 0;
         int count = 0;
 
-        for( ;i < n; i++)
+        for( ;i < A.length; i++)
         {
             if(A[i] != elem)
             {
-                A[i] = A[i+1];
                 count++;
+            }
+            else
+            {
+
+                A[1] = A[i+1];
             }
 
         }
-        return count；
+        return count;
     }
 
 };
 
+int main()
+{
+    return 0;
+}
