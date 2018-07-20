@@ -11,7 +11,7 @@ public:
         if(head == NULL)
         {
             return NULL;
-            //非法输入1
+            //非法输入
         }
         if(head->next == NULL)
         {
