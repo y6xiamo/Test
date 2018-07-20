@@ -11,14 +11,16 @@ public:
         if(head == NULL)
         {
             return NULL;
+            //非法输入1
         }
         if(head->next == NULL)
         {
             return head;
+            //只有一个节点，不用返回
         }
         ListNode* pre = head;
         ListNode* next = head->next;
-        while(pre == NULL || pre->next == NULL)
+        while(pre != NULL || pre->next != NULL)
         {
             ListNode* temp = head->next;
             head->next = next->next;
