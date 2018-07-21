@@ -1,6 +1,7 @@
 #include <iostream>
 class Solution {
 public:
+    //移除A中的n个元素
     int removeElement(int A[], int n, int elem) {
         int i = 0;
         int count = 0;
