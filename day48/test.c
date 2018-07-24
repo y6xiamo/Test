@@ -14,18 +14,18 @@
 //}
 int main()
 {
-    int num = 10;
-    int num2 = 0;
-    const int * p1 = &num;
-    *p1 = 20;
-    printf("num = %d\n",num);
+ //   int num = 10;
+ //   int num2 = 0;
+ //   const int * p1 = &num;
+ //   *p1 = 20;
+ //   printf("num = %d\n",num);
 
-    int * const p2 = &num2;
-    p2 = &num;
+ //   int * const p2 = &num2;
+ //   p2 = &num;
 
-    const int * const p3 = &num;
-    *p3 = 12;
-    p3 = &num2;
+ //   const int * const p3 = &num;
+ //   *p3 = 12;
+ //   p3 = &num2;
 
    // int x = 0;
    //}
