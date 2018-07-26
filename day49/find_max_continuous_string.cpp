@@ -20,16 +20,16 @@ int main()
                     tempstr += input[i+1];
                     i++;
                 }
+                if(tempstr.size() > max)
+                {
+                    max = tempstr.size();
+                    output = tempstr;
+                }
+                else if(tempstr.size() == max)
+                {
+                    output += tempstr;
+                }
             }
-        }
-        if(tempstr.size() > max)
-        {
-            max = tempstr.size();
-            output = tempstr;
-        }
-        else if(tempstr.size() == max)
-        {
-            output += tempstr;
         }
         tempstr.clear();
     }
