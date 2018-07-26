@@ -31,6 +31,7 @@ int main()
         {
             output += tempstr;
         }
+        tempstr.clear();
     }
     cout<<max<<endl;
     int j = 0;
