@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include<string.h>
+#include<math.h>
 int find_same(int arr1[],int arr2[],int len1,int len2)
 {
 
@@ -96,6 +97,8 @@ void test2(char ch[])
 {
     printf("ch[] = %d\n",sizeof(ch));
 }
+
+//判断闰年
 int is_leap_year(int year)
 {
     if(year % 400 == 0 ||(year / 4 == 0 && year % 100 != 0))
@@ -107,18 +110,52 @@ int is_leap_year(int year)
         return 0;
     }
 }
-int main()
+
+//判断一个数是不是素数
+int is_prime_num(int num)
 {
-    int year = 2000;
-    int ret = is_leap_year(year);
-    if(ret == 1)
+    int i = 2;
+    while(i <= num/2)
+    //while(i <= sqrt(num))
     {
-        printf("是闰年\n");
+        if(num % i == 0)
+        {
+            break;
+        }
+        i++;
+    }
+    if(i > num/2)
+//    if(i > sqrt(num))
+    {
+        return 1;
     }
     else
     {
-        printf("不是闰年\n");
+        return 0;
     }
+}
+int main()
+{
+    int num = 17;
+    int ret = is_prime_num(num);
+    if(ret == 1)
+    {
+        printf("是素数\n");
+    }
+    else
+    {
+        printf("不是素数\n");
+    }
+//    int year = 2000;
+//    int ret = is_leap_year(year);
+//    if(ret == 1)
+//    {
+//        printf("是闰年\n");
+//    }
+//    else
+//    {
+//        printf("不是闰年\n");
+//    }
 //    int a= 1;
 //    int b = 2;
 //    int c = (a>b,a = b + 10,a,b = a + 1);
