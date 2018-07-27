@@ -74,22 +74,122 @@ int fun(int n)
         return n*fun(n - 1);
     }
 }
-int main()
+void swap(int* a,int* b)
 {
-    int arr[] = {0,6,13,25,43,76,98,320,432};
-    int size = sizeof(arr)/sizeof(arr[0]);
-    int key = 43;
-    int left = 0;
-    int right = size - 1;
-    int ret = bin_search(arr,left,right,key);
-    if(ret > 1)
+//    int temp = *a;
+//    *a = *b;
+//    *b = temp;
+
+//    *a = *a + *b;
+//    *b = *a - *b;
+//    *a = *a - *b;
+ 
+    *a = *a ^ *b;
+    *b = *a ^ *b;
+    *a = *a ^ *b;
+}
+void test1(int arr[])
+{
+    printf("arr[] = %d\n",sizeof(arr));
+}
+void test2(char ch[])
+{
+    printf("ch[] = %d\n",sizeof(ch));
+}
+int is_leap_year(int year)
+{
+    if(year % 400 == 0 ||(year / 4 == 0 && year % 100 != 0))
     {
-        printf("找到了,下标是:%d\n",ret);
+        return 1;
     }
     else
     {
-        printf("没找到\n");
+        return 0;
     }
+}
+int main()
+{
+    int year = 2000;
+    int ret = is_leap_year(year);
+    if(ret == 1)
+    {
+        printf("是闰年\n");
+    }
+    else
+    {
+        printf("不是闰年\n");
+    }
+//    int a= 1;
+//    int b = 2;
+//    int c = (a>b,a = b + 10,a,b = a + 1);
+//    printf("c = %d\n",c);
+//    int i = 0;
+//    int a = 0;
+//    int b = 2;
+//    int c = 3;
+//    int d = 4;
+//   i = a++&&++b&&d++;
+//   i = a++||++b||d++;
+//    printf("a = %d\n b = %d\n c = %d\n d = %d\n i = %d\n",a,b,c,d,i);
+//    int arr[10] = {0};
+//    printf("%p\n",&arr);
+//    printf("%p\n",&arr + 1);
+//    printf("%p\n",arr);
+//    printf("%p\n",arr + 1);
+//    int s = 3;
+//    int a = 20;
+//    printf("%d\n",sizeof(s = a + 1));
+//    int arr[10] = {0};
+//    char ch[10] = {0};
+//    printf("arr = %d\n",sizeof(arr));
+//    printf("ch = %d\n",sizeof(ch));
+//    test1(arr);
+//    test2(ch);
+  //  int a = -10;
+  //  int *p = NULL;
+  //  printf(" %d\n",!2);
+  //  printf("%d\n",!0);
+  //  a = -a;
+  //  p = &a;
+
+  //  printf("%d\n",sizeof(a));
+  //  printf("%d\n",sizeof(int));
+//    int a = 10;
+//    int b = 20;
+//    swap(&a,&b);
+//    printf("a = %d\n",a);
+//    printf("b = %d\n",b);
+
+//    int num = 10;
+//    int count = 0;
+//   // int i = 0;
+//    while(num)
+//    {
+//        count++;
+//        num = num & (num-1);
+//    }
+//    for(;i < 32;i++)
+//    {
+//        if(((num>>i) & 1) == 1)
+//        {
+//            count++;
+//        }
+//    }
+//    printf("count = %d\n",count);
+//    int arr[] = {0,6,13,25,43,76,98,320,432};
+//    int size = sizeof(arr)/sizeof(arr[0]);
+//    int key = 43;
+//    int left = 0;
+//    int right = size - 1;
+//    int ret = bin_search(arr,left,right,key);
+//    if(ret > 1)
+//    {
+//        printf("找到了,下标是:%d\n",ret);
+//    }
+//    else
+//    {
+//        printf("没找到\n");
+//    }
 
 //    int i = 1;
 //    int mul = 1;
