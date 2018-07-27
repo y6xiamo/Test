@@ -142,13 +142,40 @@ int Add(int* count)
 }
 int main()
 {
-    int count = 0;
-    int ret = Add(&count);
- //   printf("ret = %d\n",ret);
-     ret = Add(&count);
-    ret = Add(&count);
+//      char arr[] = {'a','b','c','d','e','f'};
+
+//    printf("%d\n",sizeof(arr));
+//    printf("%d\n",sizeof(arr+0));
+//    printf("%d\n",sizeof(*arr));
+//    printf("%d\n",sizeof(arr[1]));
+//    printf("%d\n",sizeof(&arr));
+//    printf("%d\n",sizeof(&arr+1));
+//    printf("%d\n",sizeof(&arr[0]+1));
+    
+//    printf("%d\n",strlen(arr));
+//    printf("%d\n",strlen(arr+0));
+//    printf("%d\n",strlen(*arr));
+//    printf("%d\n",strlen(arr[1]));
+//    printf("%d\n",strlen(&arr));
+//    printf("%d\n",strlen(&arr+1));
+//    printf("%d\n",strlen(&arr[0]+1));
+ //   int a[] = {1,2,3,4};
+ //   printf("%d\n",sizeof(a));
+ //   printf("%d\n",sizeof(a+0));
+ //   printf("%d\n",sizeof(*a));
+ //   printf("%d\n",sizeof(a+1));
+ //   printf("%d\n",sizeof(a[1]));
+ //   printf("%d\n",sizeof(&a));
+ //   printf("%d\n",sizeof(*&a));
+ //   printf("%d\n",sizeof(&a+1));
+ //   printf("%d\n",sizeof(&a[0]));
+ //   printf("%d\n",sizeof(&a[0]+1));
+
+//    int count = 0;
+//    int ret = Add(&count);
+//     ret = Add(&count);
+//    ret = Add(&count);
 //    printf("ret = %d\n",ret);
-    printf("ret = %d\n",ret);
 //    int num = 17;
 //    int ret = is_prime_num(num);
 //    if(ret == 1)
