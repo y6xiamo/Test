@@ -134,18 +134,31 @@ int is_prime_num(int num)
         return 0;
     }
 }
+
+int Add(int* count)
+{
+   ++*count;
+    return *count;
+}
 int main()
 {
-    int num = 17;
-    int ret = is_prime_num(num);
-    if(ret == 1)
-    {
-        printf("是素数\n");
-    }
-    else
-    {
-        printf("不是素数\n");
-    }
+    int count = 0;
+    int ret = Add(&count);
+ //   printf("ret = %d\n",ret);
+     ret = Add(&count);
+    ret = Add(&count);
+//    printf("ret = %d\n",ret);
+    printf("ret = %d\n",ret);
+//    int num = 17;
+//    int ret = is_prime_num(num);
+//    if(ret == 1)
+//    {
+//        printf("是素数\n");
+//    }
+//    else
+//    {
+//        printf("不是素数\n");
+//    }
 //    int year = 2000;
 //    int ret = is_leap_year(year);
 //    if(ret == 1)
