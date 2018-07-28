@@ -17,7 +17,7 @@ int check_sys()
 }
 int main()
 {
-    char a = 128;
+    char a = -128;
     printf("%u\n",a);
  //   int ret = check_sys2();
  //   if(ret == 1)
