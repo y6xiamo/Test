@@ -23,6 +23,7 @@ int main()
     for(i = 0;i <= 255;i++)
     {
         puts("hello world!\n");
+        //死循环，无符号char范围为0~255，超过255溢出，将前面的位数丢弃，重劫从0开始
     }
 
 //    short num = 32767;
