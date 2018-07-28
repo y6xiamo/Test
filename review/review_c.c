@@ -16,11 +16,18 @@ int check_sys()
     int i = 1;
     return (*(char*)&i);
 }
+
+unsigned char i = 0;
 int main()
 {
-    short num = 32767;
-    short int a = num + 1;
-    printf("%d\n",a);
+    for(i = 0;i <= 255;i++)
+    {
+        puts("hello world!\n");
+    }
+
+//    short num = 32767;
+//    short int a = num + 1;
+//    printf("%d\n",a);
 //    char a[1000];
 //
 //    int i = 0;
