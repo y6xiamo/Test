@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<string.h>
 //判断一个机器是大端还是小端
 int check_sys2()
 {
@@ -17,11 +18,23 @@ int check_sys()
 }
 int main()
 {
-    unsigned i;
-    for(i = 9;i >= 0;i--)
-    {
-        printf("%u\n",i);
-    }
+    short num = 32767;
+    short int a = num + 1;
+    printf("%d\n",a);
+//    char a[1000];
+//
+//    int i = 0;
+//    for( ;i < 1000;i++)
+//    {
+//        a[i] = -1-i;
+//    }
+//    printf("%d\n",strlen(a));
+
+ //   unsigned i;
+ //   for(i = 9;i >= 0;i--)
+ //   {
+ //       printf("%u\n",i);//死循环，无符号数减到0再-1，会变成一个非常大的数
+ //   }
 //    int i = -20;
 //    unsigned int j = 10;
 //    printf("%d\n",i+j);
