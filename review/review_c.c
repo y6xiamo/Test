@@ -1,5 +1,15 @@
 #include <stdio.h>
 //判断一个机器是大端还是小端
+int check_sys2()
+{
+    union
+    {
+        int i;
+        char c;
+    }un;
+    un.i = 1;
+    return un.c;
+}
 int check_sys()
 {
     int i = 1;
@@ -7,7 +17,7 @@ int check_sys()
 }
 int main()
 {
-    int ret = check_sys();
+    int ret = check_sys2();
     if(ret == 1)
     {
         printf("大端\n");
