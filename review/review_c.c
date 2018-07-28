@@ -17,8 +17,11 @@ int check_sys()
 }
 int main()
 {
-    char a = -128;
-    printf("%u\n",a);
+    char a = -1;
+    signed char b = -1;
+    unsigned char c = -1;
+
+    printf("a = %d b = %d c = %d\n",a,b,c);
  //   int ret = check_sys2();
  //   if(ret == 1)
  //   {
