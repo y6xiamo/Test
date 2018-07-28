@@ -17,14 +17,24 @@ int check_sys()
     return (*(char*)&i);
 }
 
-unsigned char i = 0;
+//unsigned char i = 0;
 int main()
 {
-    for(i = 0;i <= 255;i++)
-    {
-        puts("hello world!\n");
-        //死循环，无符号char范围为0~255，超过255溢出，将前面的位数丢弃，重劫从0开始
-    }
+    int n = 9;
+    float *pFloat = (float*)&n;
+    printf("n的值为：%d\n",n);
+    printf("*pFloat的值为：%f\n",*pFloat);
+
+    *pFloat = 9.0;
+    printf("n的值为：%d\n",n);
+    printf("*pFloat的值为：%f\n",*pFloat);
+
+
+//    for(i = 0;i <= 255;i++)
+//    {
+//        puts("hello world!\n");
+//        //死循环，无符号char范围为0~255，超过255溢出，将前面的位数丢弃，重劫从0开始
+//    }
 
 //    short num = 32767;
 //    short int a = num + 1;
