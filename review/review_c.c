@@ -17,9 +17,14 @@ int check_sys()
 }
 int main()
 {
-    int i = -20;
-    unsigned int j = 10;
-    printf("%d\n",i+j);
+    unsigned i;
+    for(i = 9;i >= 0;i--)
+    {
+        printf("%u\n",i);
+    }
+//    int i = -20;
+//    unsigned int j = 10;
+//    printf("%d\n",i+j);
 //    char a = -1;
 //    signed char b = -1;
 //    unsigned char c = -1;
