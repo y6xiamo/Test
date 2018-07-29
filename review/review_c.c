@@ -20,10 +20,11 @@ int check_sys()
 //unsigned char i = 0;
 int main()
 {
-    const int n = 10;
-    int *p = (int*)&n;
-    *p = 20;
-    printf("%d\n",n);
+    
+//    const int n = 10;
+//    int *p = (int*)&n;
+//    *p = 20;
+//    printf("%d\n",n);
     //浮点数的存储
 //    int n = 9;
 //    float *pFloat = (float*)&n;
