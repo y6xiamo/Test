@@ -20,15 +20,16 @@ int check_sys()
 //unsigned char i = 0;
 int main()
 {
-    int n = 9;
-    float *pFloat = (float*)&n;
-    printf("n的值为：%d\n",n);
-    printf("*pFloat的值为：%f\n",*pFloat);
-
-    *pFloat = 9.0;
-    printf("n的值为：%d\n",n);
-    printf("*pFloat的值为：%f\n",*pFloat);
-
+    //浮点数的存储
+//    int n = 9;
+//    float *pFloat = (float*)&n;
+//    printf("n的值为：%d\n",n);
+//    printf("*pFloat的值为：%f\n",*pFloat);
+//
+//    *pFloat = 9.0;
+//    printf("n的值为：%d\n",n);
+//    printf("*pFloat的值为：%f\n",*pFloat);
+//
 
 //    for(i = 0;i <= 255;i++)
 //    {
