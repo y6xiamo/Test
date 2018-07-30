@@ -16,10 +16,46 @@ int check_sys()
     int i = 1;
     return (*(char*)&i);
 }
+//n的阶乘
+int func(int num)
+{
+    if(num <= 1)
+    {
+        return 1;
+    }
+    return (num*func(num-1));
+}
+//求字符串长度
+int myStrlen(char* str)
+{
+    if(*str == '\0')
+    {
+        return 0;
+    }
+    return 1 + myStrlen(str+1);
+}
+//接受一个整形值，将它转换为字符并打印
+void print(int num)
+{
+    if(num > 9)
+    {
+        print(num/10);
+    }
+        printf("%d ",num % 10);
 
+}
 //unsigned char i = 0;
 int main()
 {
+
+    int num = 10;
+    int ret = func(num);
+    printf("ret = %d\n",ret);
+//    char arr[] = "abcdef";
+//    int len = myStrlen(arr);
+//    printf("len = %d\n",len);
+//    int num = 1234;
+//    print(1234);
     
 //    const int n = 10;
 //    int *p = (int*)&n;
