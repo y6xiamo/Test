@@ -1,14 +1,15 @@
 #include <stdio.h>
-void my_strcpy(char* dst,const char* src)
+char* my_strcpy(char* dst,const char* src)
 {
     if(dst == NULL || src == NULL)
     {
-        return;
+        return NULL;
     }
     while(*dst++ = *src++)
     {
         ;
     }
+    return dst;
  //   while(*src)
  //   {
  //       *dst = *src;
