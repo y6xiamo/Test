@@ -1,6 +1,6 @@
 #include <stdio.h>
 //借助指针
-int my_strlen3(char* str)
+size_t my_strlen3(char* str)
 {
     if(str == NULL)
     {
@@ -15,7 +15,7 @@ int my_strlen3(char* str)
     {
         p_str++;
     }
-    return p_str -str;
+    return p_str - str;
 }
 //递归
 int my_strlen2(char* str)
