@@ -30,8 +30,12 @@ int my_strcmp(const char* dest,const char* src)
 }
 int main()
 {
-    char dest[] = "1234a";
-    char src[] = "abcdefg";
+//    char dest[] = "1234a";
+//    char src[] = "abcdefg";
+//    char dest[] = "1234a";    
+//    char src[] = "1234a";
+    char dest[] = "1";    
+    char src[] = "";
     int ret = my_strcmp(dest,src);
     if(ret > 0)
     {

@@ -153,9 +153,9 @@ int my_strlen(const char* arr)
 }
 int main()
 {
-    char* arr = "abcdef";
-    int count = my_strlen(arr);
-    printf("count = %d\n",count);
+//    char* arr = "abcdef";
+//    int count = my_strlen(arr);
+//    printf("count = %d\n",count);
 //    int a[3][4] = {0};
 //
 //    printf("%d\n",sizeof(a));
@@ -218,17 +218,17 @@ int main()
 //    printf("%d\n",strlen(&arr));
 //    printf("%d\n",strlen(&arr+1));
 //    printf("%d\n",strlen(&arr[0]+1));
- //   int a[] = {1,2,3,4};
- //   printf("%d\n",sizeof(a));
- //   printf("%d\n",sizeof(a+0));
- //   printf("%d\n",sizeof(*a));
- //   printf("%d\n",sizeof(a+1));
- //   printf("%d\n",sizeof(a[1]));
- //   printf("%d\n",sizeof(&a));
- //   printf("%d\n",sizeof(*&a));
- //   printf("%d\n",sizeof(&a+1));
- //   printf("%d\n",sizeof(&a[0]));
- //   printf("%d\n",sizeof(&a[0]+1));
+//   int a[] = {1,2,3,4};
+//   printf("%d\n",sizeof(a));//数组名,表示整个数组的大小        16
+//   printf("%d\n",sizeof(a+0));//表示第一个元素的地址           8
+//   printf("%d\n",sizeof(*a));//代表第一个元素                  4
+//   printf("%d\n",sizeof(a+1));//代表第二个元素的地址           8
+//   printf("%d\n",sizeof(a[1]));//代表第二个元素                4
+//   printf("%d\n",sizeof(&a));//表示整个数组的地址              8
+//   printf("%d\n",sizeof(*&a));
+//   printf("%d\n",sizeof(&a+1));//第一个元素的第二个字节的地址  8
+//   printf("%d\n",sizeof(&a[0]));//表示是第一个元素的地址       8
+//   printf("%d\n",sizeof(&a[0]+1));//第一个元素第二个字节的地址 8
 
 //    int count = 0;
 //    int ret = Add(&count);

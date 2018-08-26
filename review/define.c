@@ -1,8 +1,8 @@
 #include <stdio.h>
-#define Max(a,b) a * b == 8 ? a * b : b
-//define Max(a,b) (((a) * (b) == 8) ? ((a) * (b)) :(b))
+//#define Max(a,b) a * b == 8 ? a * b : b
+#define Max(a,b) (((a) * (b) == 8) ? ((a) * (b)) :(b))
 
-int max(int a,int b)
+inline int max(int a,int b)
 {
     if(a * b == 8)
     {

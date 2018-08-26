@@ -48,9 +48,9 @@ void print(int num)
 int main()
 {
 
-    int num = 10;
-    int ret = func(num);
-    printf("ret = %d\n",ret);
+//    int num = 10;
+//    int ret = func(num);
+//    printf("ret = %d\n",ret);
 //    char arr[] = "abcdef";
 //    int len = myStrlen(arr);
 //    printf("len = %d\n",len);
@@ -103,15 +103,15 @@ int main()
 //    unsigned char c = -1;
 //
 //    printf("a = %d b = %d c = %d\n",a,b,c);
- //   int ret = check_sys2();
- //   if(ret == 1)
- //   {
- //       printf("大端\n");
- //   }
- //   else
- //   {
- //       printf("小端\n");
- //   }
+   int ret = check_sys2();
+   if(ret == 1)
+   {
+       printf("小端\n");
+   }
+   else
+   {
+       printf("大端\n");
+   }
 
     return 0;
 }

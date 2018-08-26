@@ -1,4 +1,5 @@
 #include <stdio.h>
+//在一个字符串里查找字串
 char* my_strstr(const char* str1,const char* str2)
 {
     if(str1 == NULL ||str2 == NULL)

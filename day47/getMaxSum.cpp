@@ -1,5 +1,7 @@
 #include <iostream>
 class MaxSum {
+using namespace std;
+
 public:
     int getMaxSum(vector<int> A, int n)
     {
@@ -12,7 +14,7 @@ public:
             max_sum[i] = max(A[i],max_sum[i-1]+A[i]);
          }
 
-         i = 0;
+          i = 0;
          int sum = 0;
          for( ; i < n;++i)
          {

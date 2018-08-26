@@ -14,10 +14,10 @@ public:
    //     x = _x;
    // }
    
-    const int * TestReturn(int num)
+    const int * TestReturn()
     {
-         num = 20;
-        int *a = &num;
+        // num = 20;
+        int *a = new int();
         return a;
     }
 private:
@@ -25,6 +25,8 @@ private:
 };
 int main()
 {
-    int *p = TestReturn(10);
+    A a1;
+   int *p = a1.TestReturn();
+   (void)p;
     return 0;
 }

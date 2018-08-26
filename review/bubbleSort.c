@@ -1,24 +1,54 @@
 #include <stdio.h>
 #include<assert.h>
-//用指针
+void Swap(int* a,int*b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+//用区间来分割
 void bubleSort(int arr[],int size)
 {
-    assert(arr != NULL);
-    int *cur = arr;//冒泡的次数
-    for( ;cur != &arr[size];cur++)
+    if(arr == NULL)
     {
-        int *next = cur + 1;//比较的次数
-        for( ;next != &arr[size];next++)
+        return;
+    }
+    if(size <= 1)
+    {
+        return;
+    }
+    //[0,bound)表示有序区间
+    //[bound,size)表示待排序区间
+    int bound = 0;
+    for( ;bound < size;bound++)
+    {
+        int cur = size -1;
+        for(;cur > bound;cur--)
         {
-            if(*cur < *next)
+            if(arr[cur] > arr[cur-1])
             {
-                int temp = *cur;
-                *cur = *next;
-                *next = temp;
+                Swap(&arr[cur],&arr[cur-1]);
             }
         }
     }
 }
+//用指针
+//void bubleSort(int arr[],int size)
+//{
+//    assert(arr != NULL);
+//    int *cur = arr;//冒泡的次数
+//    for( ;cur != &arr[size];cur++)
+//    {
+//        int *next = cur + 1;//比较的次数
+//        for( ;next != &arr[size];next++)
+//        {
+//            if(*cur < *next)
+//            {
+//                Swap(cur,next);
+//            }
+//        }
+//    }
+//}
 //升序
 //void bubleSort(int arr[],int size)
 //{
@@ -31,9 +61,7 @@ void bubleSort(int arr[],int size)
 //        {
 //            if(arr[count] > arr[cur])
 //            {
-//                int temp = arr[count];
-//                arr[count] = arr[cur];
-//                arr[cur] = temp;
+//               Swap(&arr[count],&arr[cur]);
 //            }
 //        }
 //    }
@@ -50,9 +78,7 @@ void bubleSort(int arr[],int size)
 //        {
 //            if(arr[count] < arr[cur])
 //            {
-//                int temp = arr[count];
-//                arr[count] = arr[cur];
-//                arr[cur] = temp;
+//                Swap(&arr[count],&arr[cur]);
 //            }
 //        }
 //    }
